@@ -1,0 +1,31 @@
+openapi: 3.0.3
+info:
+  title: BEL-Chain API
+  version: 1.0.0
+  description: Prototype API for decentralized identity, access control, asset passports and audit evidence.
+servers:
+  - url: https://api.example.belchain/v1
+paths:
+  /identities:
+    get:
+      summary: List authorized identities
+      responses:
+        '200': {description: Success}
+    post:
+      summary: Create identity
+      responses:
+        '201': {description: Created}
+  /assets:
+    get:
+      summary: List assets
+      responses:
+        '200': {description: Success}
+    post:
+      summary: Mint asset passport
+      responses:
+        '201': {description: Created}
+  /audits:
+    get:
+      summary: Query audit events
+      responses:
+        '200': {description: Success}
